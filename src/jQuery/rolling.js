@@ -18,7 +18,7 @@ $.fn.Rolling = function(options) {
     });
 
     this.everyTime(_options.time, this.selector, function() {
-      n = n &gt;= (count -1)? 0 : ++n;
+      n = n >= (count -1)? 0 : ++n;
       $this = $(this);
       $this.children().eq(n).trigger("click");
     });
